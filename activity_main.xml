@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical" android:padding="20dp"
+        android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:text="OSINT Profile Analyzer" android:textSize="28sp"
+            android:textStyle="bold" android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView android:text="Public-data / passive analysis only"
+            android:layout_marginTop="6dp" android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText android:id="@+id/target" android:hint="Username / profile name"
+            android:layout_marginTop="18dp" android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText android:id="@+id/urls" android:hint="Public profile URLs (one per line)"
+            android:gravity="top" android:minLines="4" android:inputType="textUri|textMultiLine"
+            android:layout_marginTop="10dp" android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText android:id="@+id/publicText" android:hint="Paste public bio/text here (optional)"
+            android:gravity="top" android:minLines="5" android:inputType="textMultiLine"
+            android:layout_marginTop="10dp" android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <Button android:id="@+id/analyze" android:text="ANALYZE"
+            android:layout_marginTop="16dp" android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <Button android:id="@+id/export" android:text="COPY REPORT"
+            android:layout_marginTop="8dp" android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView android:id="@+id/result" android:textIsSelectable="true"
+            android:fontFamily="monospace" android:paddingTop="18dp"
+            android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</ScrollView>
